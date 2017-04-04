@@ -1,0 +1,4 @@
+cd devworkspace/personal-site
+Browser-sync start --server --directory --files “**/*”
+
+node-sass -o styles sass/stylesheet.scss
