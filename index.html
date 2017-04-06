@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mySite">
 <head>
-	<title>HenryBulmer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Henry Bulmer</title>
 
 	<!-- C S S !-->
 	<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
@@ -12,20 +13,18 @@
 
 	<!-- F O N T S !-->
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+	<!-- A N G U L A R !-->
+	<script src="/node_modules/angular/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+	<!-- A P P !-->
+    <script src ="app/app.js"></script>
+
 </head>
 <body>
-	<div class="container-fluid font-color">
-		<div class="hero">
-			<div class="container-fluid absolute top-layer hero-text">
-				<div class="row">
-					<h1>Henry Bulmer</h1>
-					<h2>Front End Developer</h2>
-					<h2>||</h2>
-					<h2>Software Engineer</h2>
-				</div>
-			</div>
-			<img class="img" src="assets\pixelSky.png">
-		</div>
-	</div>
+
+	<main ng-view></main>
+
 </body>
 </html>

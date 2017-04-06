@@ -11,5 +11,8 @@
     "url": "/Bumler/personal-site"
   },
   "author": "Henry Bulmer",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
 }
