@@ -1,13 +1,46 @@
-// .font-color{
-//   color: #eee4d7;
-// }
+//----------------------------------------------------------------------------------
+//B A S E 
+//----------------------------------------------------------------------------------
+.page {
+  height: 100vh;
+  position: relative;
+  padding-top: 50px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-layer {
+  z-index: 999;
+}
+
+.big-y-margin {
+  margin-top: 5%;
+}
+
+.huge-y-margin {
+  margin-top: 100px;
+}
+
+.y-margin {
+  margin-top: 15px;
+}
+
+.yy-margin {
+  margin-top: 30px;
+}
+
+.y-margin-bot {
+  margin-bottom: 15px;
+}
 
 //----------------------------------------------------------------------------------
 //H E A D E R
 //----------------------------------------------------------------------------------
 .navbar {
-  background: #79C9F9;
-  border-color: #79c9f9;
+  background: rgba(54, 25, 25, .1);
+  border-color: rgba(54, 25, 25, .1);
 }
 
 .navbar-brand {
@@ -32,16 +65,9 @@
   margin-top: 0px;
 }
 
-.left-text{
-  text-align: left;
-}
-
-.login-form {
-  font-size: 18px;
-  background-color: #9a2d19;
-  color: #eee4d7;
-}
-
+//----------------------------------------------------------------------------------
+//S P L A S H  P A G E
+//----------------------------------------------------------------------------------
 .hero{
   font-family: 'Press Start 2P', cursive;
 
@@ -107,12 +133,6 @@
   cursor: pointer;
 
   font-size: 24px;
-
-  a{
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
-    padding: 16px 32px;
-  }
 }
 
 .button {
@@ -126,11 +146,6 @@
   background-color: #eee4d7;
   color: #9a2d19;
 
-  a{
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
-    padding: 16px 32px;
-  }
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -154,35 +169,6 @@
 .button:hover {
   background-color: #eee4d7;
   color: #9a2d19;
-}
-
-
-.absolute{
-  position: absolute;
-}
-
-.top-layer{
-  z-index: 999;
-}
-
-.big-y-margin{
-  margin-top: 5%;
-}
-
-.huge-y-margin{
-  margin-top: 100px;
-}
-
-.y-margin{
-  margin-top: 15px;
-}
-
-.yy-margin{
-  margin-top: 30px;
-}
-
-.y-margin-bot{
-  margin-bottom: 15px;
 }
 
 .btn-outline {

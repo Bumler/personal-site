@@ -1,6 +1,32 @@
+.page {
+  height: 100vh;
+  position: relative;
+  padding-top: 50px; }
+
+.absolute {
+  position: absolute; }
+
+.top-layer {
+  z-index: 999; }
+
+.big-y-margin {
+  margin-top: 5%; }
+
+.huge-y-margin {
+  margin-top: 100px; }
+
+.y-margin {
+  margin-top: 15px; }
+
+.yy-margin {
+  margin-top: 30px; }
+
+.y-margin-bot {
+  margin-bottom: 15px; }
+
 .navbar {
-  background: #79C9F9;
-  border-color: #79c9f9; }
+  background: rgba(54, 25, 25, 0.1);
+  border-color: rgba(54, 25, 25, 0.1); }
 
 .navbar-brand {
   padding: 0px 18px 0px 15px; }
@@ -18,14 +44,6 @@
 
 .no-top-margin {
   margin-top: 0px; }
-
-.left-text {
-  text-align: left; }
-
-.login-form {
-  font-size: 18px;
-  background-color: #9a2d19;
-  color: #eee4d7; }
 
 .hero {
   font-family: 'Press Start 2P', cursive;
@@ -74,12 +92,6 @@
   transition-duration: 0.4s;
   cursor: pointer;
   font-size: 24px; }
-  .button a {
-    color: inherit;
-    /* blue colors for links too */
-    text-decoration: inherit;
-    /* no underline */
-    padding: 16px 32px; }
 
 .button {
   background-color: transparent;
@@ -101,12 +113,6 @@
   transition-duration: 0.4s;
   cursor: pointer;
   font-size: 24px; }
-  .button:hover a {
-    color: inherit;
-    /* blue colors for links too */
-    text-decoration: inherit;
-    /* no underline */
-    padding: 16px 32px; }
 
 .button {
   background-color: transparent;
@@ -117,27 +123,6 @@
 .button:hover {
   background-color: #eee4d7;
   color: #9a2d19; }
-
-.absolute {
-  position: absolute; }
-
-.top-layer {
-  z-index: 999; }
-
-.big-y-margin {
-  margin-top: 5%; }
-
-.huge-y-margin {
-  margin-top: 100px; }
-
-.y-margin {
-  margin-top: 15px; }
-
-.yy-margin {
-  margin-top: 30px; }
-
-.y-margin-bot {
-  margin-bottom: 15px; }
 
 .btn-outline {
   background-color: transparent;
