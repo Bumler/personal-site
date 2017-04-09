@@ -7,13 +7,30 @@
 //----------------------------------------------------------------------------------
 .navbar {
   background: #79C9F9;
-      border-color: #79c9f9;
+  border-color: #79c9f9;
 }
 
 .navbar-brand {
   padding: 0px 18px 0px 15px;
 }
 
+.card {
+  margin-top: 75px;
+  padding-bottom: 10px;
+  @media screen and (min-width: 992px) {
+    border-radius: 25px;
+    border: 5px solid black;
+  }
+}
+
+//bit of a hack to make two headers look like theyre together
+.no-bot-margin {
+  margin-bottom: 0px;
+}
+
+.no-top-margin {
+  margin-top: 0px;
+}
 
 .left-text{
   text-align: left;
@@ -114,29 +131,29 @@
     text-decoration: inherit; /* no underline */
     padding: 16px 32px;
   }
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
 
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .button {
-    background-color: transparent; 
-    color: #eee4d7; 
-    border: 2px solid #eee4d7;
-    width: 250px;
+  background-color: transparent; 
+  color: #eee4d7; 
+  border: 2px solid #eee4d7;
+  width: 250px;
 }
 
 .button:hover {
-    background-color: #eee4d7;
-    color: #9a2d19;
+  background-color: #eee4d7;
+  color: #9a2d19;
 }
 
 

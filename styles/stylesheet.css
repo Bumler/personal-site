@@ -5,6 +5,20 @@
 .navbar-brand {
   padding: 0px 18px 0px 15px; }
 
+.card {
+  margin-top: 75px;
+  padding-bottom: 10px; }
+  @media screen and (min-width: 992px) {
+    .card {
+      border-radius: 25px;
+      border: 5px solid black; } }
+
+.no-bot-margin {
+  margin-bottom: 0px; }
+
+.no-top-margin {
+  margin-top: 0px; }
+
 .left-text {
   text-align: left; }
 
