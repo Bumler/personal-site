@@ -4,12 +4,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Henry Bulmer</title>
 
-	<!-- C S S !-->
-	<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
-
 	<!-- B O O T S T R A P !-->
 	<link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
 	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- C S S !-->
+	<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
 
 	<!-- F O N T S !-->
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
@@ -23,7 +23,7 @@
 
 </head>
 <body>
-
+	<header ng-include="'views/header.html'"></header>
 	<main ng-view></main>
 
 </body>
