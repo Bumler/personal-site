@@ -6,3 +6,8 @@ cd documents/webdesign/personal-site
 Browser-sync start --server --directory --files “**/*”
 
 node-sass -o styles sass/stylesheet.scss
+
+glyph
+object-alignb-top (web)
+phone (phone)
+console (other)
