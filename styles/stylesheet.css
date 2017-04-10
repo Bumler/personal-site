@@ -27,6 +27,9 @@
 .pixel-font {
   font-family: 'Press Start 2P', cursive; }
 
+.black {
+  color: black; }
+
 .navbar {
   background: rgba(54, 25, 25, 0.1);
   border-color: rgba(54, 25, 25, 0.1); }
@@ -133,12 +136,12 @@
   transition: all .5s; }
 
 .project-bg {
-  background-image: url("/assets/night-sky.png");
+  background: url("/assets/night-sky.png") no-repeat center center fixed;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   margin-left: -15px;
-  margin-right: -15px;
-  background-size: 100%; }
+  margin-right: -15px; }
 
 .project-font-color {
   color: white; }
@@ -150,3 +153,19 @@
 
 .img-padding {
   padding: 20px 20px 20px 20px; }
+
+.about-bg {
+  background: url("/assets/pixelWarm.png") no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .about-bg p {
+    font-size: 20px; }
+
+.about-font-color {
+  color: white; }
+
+.text-bg {
+  background: rgba(54, 25, 25, 0.6); }
