@@ -172,7 +172,8 @@
   margin-left: -15px;
   margin-right: -15px; }
   .about-bg p {
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 5px; }
 
 .about-font-color {
   color: white; }
