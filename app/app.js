@@ -12,7 +12,7 @@ mySite.config(['$routeProvider', function($routeProvider){
 
 }]);
 
-mySite.controller('mainController', ['$scope', function($scope){
+mySite.controller('mainController', ['$scope', '$anchorScroll', '$location', function($scope, $anchorScroll, $location){
 	$scope.projects = [
 	{
 		title: "Hot Meals",
@@ -48,5 +48,10 @@ mySite.controller('mainController', ['$scope', function($scope){
 		background: "linear-gradient(to bottom right,#BFBFBF,#ABABAB)",
 		padding: true
 	}
-	]
+	];
+
+	$scope.scrollTo = function (scrollLocation) {
+		$location.hash(scrollLocation);
+		$anchorScroll();
+	};
 }]);

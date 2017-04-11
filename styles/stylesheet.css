@@ -142,7 +142,7 @@
   transition: all .5s; }
 
 .project-bg {
-  background: url("/assets/night-sky.png") no-repeat center center fixed;
+  background: url("/assets/pixelCity.jpg") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
