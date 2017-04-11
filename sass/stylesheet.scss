@@ -50,6 +50,11 @@
 .right-mar {
   margin-right: 15px;
 }
+
+.container-faux {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 //----------------------------------------------------------------------------------
 //H E A D E R
 //----------------------------------------------------------------------------------
@@ -278,5 +283,7 @@
   @media screen and (min-width: 992px) {
     border-radius: 25px;
     border: 5px solid white;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 }
