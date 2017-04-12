@@ -1,0 +1,18 @@
+<div class="container-fluid">
+	<div id="project" class="page project-bg project-font-color">
+		<div class="container-faux">
+			<h1 class="pixel-font">My Projects</h1>
+			<h3 class="pixel-font">Let's start with what's most important</h3>
+
+			<div class = "row">
+				<div class="project" ng-repeat="project in projects">
+					<div class="col-sm-2 col-xs-4 yy-margin ">
+						<img ng-src={{project.picture}} style="background: {{project.background}}" ng-class="{'img-padding': project.padding === true}">
+						<h3 style="text-align: center;">{{project.title}}</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
