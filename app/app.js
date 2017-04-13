@@ -6,13 +6,27 @@ mySite.config(['$routeProvider', function($routeProvider){
 		templateUrl: 'views/main.html',
 		controller: 'mainController'
 	})
+	.when('/project',{
+		templateUrl: 'views/project.html',
+		controller: 'projectController'
+	})
 	.otherwise({
 		redirectTo: '/'
 	});
 
 }]);
 
-mySite.controller('mainController', ['$scope', '$anchorScroll', '$location', function($scope, $anchorScroll, $location){
+mySite.service('currentProjectService', function(){
+	var currentProject;
+	this.setCurrentProject = function(project){
+		currentProject = project;
+	};
+	this.getCurrentProject = function(){
+		return currentProject;
+	}
+});
+
+mySite.controller('mainController', function($scope, $anchorScroll, $location, currentProjectService){
 	$scope.projects = [
 	{
 		title: "Hot Meals",
@@ -50,8 +64,18 @@ mySite.controller('mainController', ['$scope', '$anchorScroll', '$location', fun
 	}
 	];
 
+	$scope.goToProject = function(project) {
+		debugger;
+		currentProjectService.setCurrentProject(project);
+		$location.path('/project');
+	}
+
 	$scope.scrollTo = function (scrollLocation) {
 		$location.hash(scrollLocation);
 		$anchorScroll();
 	};
-}]);
+});
+
+mySite.controller('projectController', function($scope, currentProjectService){
+  $scope.currentProject = currentProjectService.getCurrentProject();
+});
