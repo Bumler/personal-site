@@ -149,7 +149,7 @@
   transition: all .5s; }
 
 .project-highlight-bg {
-  background: url("/assets/night-sky.png") no-repeat center center fixed;
+  background: url("/assets/bgs/night-sky.png") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -168,7 +168,7 @@
   padding: 20px 20px 20px 20px; }
 
 .project-bg {
-  background: url("/assets/pixelCity.jpg") no-repeat center center fixed;
+  background: url("/assets/bgs/pixelCity.jpg") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -183,7 +183,7 @@
   font-size: 20px; }
 
 .about-bg {
-  background: url("/assets/pixelWarm.png") no-repeat center center fixed;
+  background: url("/assets/bgs/pixelWarm.png") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -200,7 +200,7 @@
   background: rgba(54, 25, 25, 0.6); }
 
 .contact-bg {
-  background: url("/assets/darkPixel.png") no-repeat center center fixed;
+  background: url("/assets/bgs/darkPixel.png") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
