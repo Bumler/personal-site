@@ -65,7 +65,6 @@ mySite.controller('mainController', function($scope, $anchorScroll, $location, c
 	];
 
 	$scope.goToProject = function(project) {
-		debugger;
 		currentProjectService.setCurrentProject(project);
 		$location.path('/project');
 	}
