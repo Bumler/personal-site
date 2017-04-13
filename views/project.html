@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	<div id="project" class="page project-highlight-bg project-font-color project-highlight">
 		<div class="container-faux">
-			<div class="col-md-8">
+			<div class="col-md-6">
 				<h1>{{currentProject.title}}</h1>
 				<h2>Project Overview</h2>
 				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</p>
@@ -12,11 +12,16 @@
 				<p>orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<h1 title="teehee this isn't a star!">.</h1>
-				<img ng-src={{currentProject.picture}} style="background: {{currentProject.background}}" 
+<!-- 				<img ng-src={{currentProject.picture}} style="background: {{currentProject.background}}" 
 				ng-class="{'img-padding': currentProject.padding === true}"
-				class="img-in-col">
+				class="img-in-col"> -->
+				<div uib-carousel active="active" no-wrap="noWrapSlides">
+					<div uib-slide ng-repeat="photo in currentProject.photos track by photo.index" index="photo.index">
+						<img class="img-in-col" ng-src="{{photo.pic}}">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
