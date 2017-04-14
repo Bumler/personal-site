@@ -85,6 +85,7 @@ mySite.controller('mainController', function($scope, $anchorScroll, $location, c
 	{
 		title: "The System",
 		picture: "/assets/projects/system/system-ico.png",
+		android: true,
 		photos: [
 			{
 				pic: "/assets/projects/system/a.png",
@@ -107,6 +108,7 @@ mySite.controller('mainController', function($scope, $anchorScroll, $location, c
 	{
 		title: "Drone Forensics",
 		picture: "/assets/projects/drone/drone-ico.png",
+		android: true,
 		photos: [
 			{
 				pic: "/assets/projects/drone/a.png",
@@ -132,7 +134,8 @@ mySite.controller('mainController', function($scope, $anchorScroll, $location, c
 	},
 	{
 		title: "Carby",
-		picture: "/assets/projects/carby/carby-ico.png",	
+		picture: "/assets/projects/carby/carby-ico.png",
+		android: true,
 		photos: [
 			{
 				pic: "/assets/projects/carby/a.png",
@@ -195,4 +198,25 @@ mySite.controller('mainController', function($scope, $anchorScroll, $location, c
 
 mySite.controller('projectController', function($scope, currentProjectService){
   $scope.currentProject = currentProjectService.getCurrentProject();
+
+  $scope.leftCol = function(){
+  	if($scope.currentProject.android){
+  		return "col-md-8";
+  	}
+  	else {return "col-md-6";}
+  };
+
+  $scope.rightCol = function(){
+  	if($scope.currentProject.android){
+  		return "col-md-4";
+  	}
+  	else {return "col-md-6";}
+  };
+
+  $scope.imgClass = function(){
+  	if($scope.currentProject.android){
+  		return "android-img";
+  	}
+  	else {return "web-img";}
+  }
 });
