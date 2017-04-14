@@ -1,4 +1,4 @@
-var mySite = angular.module('mySite', ['ngRoute', 'ui.bootstrap']);
+var mySite = angular.module('mySite', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
 
 mySite.config(['$routeProvider', function($routeProvider){
 	$routeProvider
@@ -62,31 +62,123 @@ mySite.controller('mainController', function($scope, $anchorScroll, $location, c
 	},
 	{
 		title: "The Lord Dragons",
-		picture: "/assets/projects/tld/tld-ico.jpg"
+		picture: "/assets/projects/tld/tld-ico.jpg",
+		photos: [
+			{
+				pic: "/assets/projects/tld/a.png",
+				index: 0
+			},
+						{
+				pic: "/assets/projects/tld/b.png",
+				index: 1
+			},
+						{
+				pic: "/assets/projects/tld/c.png",
+				index: 2
+			},
+						{
+				pic: "/assets/projects/tld/d.png",
+				index: 3
+			}
+		]
 	},
 	{
 		title: "The System",
-		picture: "/assets/projects/system/system-ico.png"
+		picture: "/assets/projects/system/system-ico.png",
+		photos: [
+			{
+				pic: "/assets/projects/system/a.png",
+				index: 0
+			},
+			{
+				pic: "/assets/projects/system/b.png",
+				index: 1
+			},
+						{
+				pic: "/assets/projects/system/c.png",
+				index: 2
+			},
+						{
+				pic: "/assets/projects/system/d.png",
+				index: 3
+			}
+		]
 	},
 	{
 		title: "Drone Forensics",
-		picture: "/assets/projects/drone/drone-ico.png"	
+		picture: "/assets/projects/drone/drone-ico.png",
+		photos: [
+			{
+				pic: "/assets/projects/drone/a.png",
+				index: 0
+			},
+						{
+				pic: "/assets/projects/drone/b.png",
+				index: 1
+			},
+						{
+				pic: "/assets/projects/drone/c.png",
+				index: 2
+			},
+			{
+				pic: "/assets/projects/drone/d.png",
+				index: 3
+			},
+			{
+				pic: "/assets/projects/drone/e.png",
+				index: 4
+			}
+		]
 	},
 	{
 		title: "Carby",
-		picture: "/assets/projects/carby/carby-ico.png"	
+		picture: "/assets/projects/carby/carby-ico.png",	
+		photos: [
+			{
+				pic: "/assets/projects/carby/a.png",
+				index: 0
+			},
+						{
+				pic: "/assets/projects/carby/b.png",
+				index: 1
+			},
+						{
+				pic: "/assets/projects/carby/c.png",
+				index: 2
+			}
+		]
 	},
 	{
 		title: "V.C. Data Automator",
 		picture: "/assets/projects/ventura/ventura-ico.png",
 		background: "linear-gradient(to bottom right,#007F00,#004C00)",
-		padding: true	
+		padding: true,
+		photos: [
+			{
+				pic: "/assets/projects/ventura/a.png",
+				index: 0
+			},
+						{
+				pic: "/assets/projects/ventura/b.png",
+				index: 1
+			}
+		]
 	},
 	{
 		title: "Toll Booth Simulator",
 		picture: "/assets/projects/mcm/mcm-ico.png",
 		background: "linear-gradient(to bottom right,#BFBFBF,#ABABAB)",
-		padding: true
+		padding: true,
+		photos: [
+			{
+				pic: "/assets/projects/mcm/a.png",
+				index: 0
+			},
+						{
+				pic: "/assets/projects/mcm/b.png",
+				index: 1
+			}
+		]
 	}
 	];
 
