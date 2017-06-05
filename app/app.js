@@ -194,6 +194,12 @@ mySite.controller('mainController', function($scope, $anchorScroll, $location, c
 		$location.hash(scrollLocation);
 		$anchorScroll();
 	};
+
+	$scope.highlights = true;
+
+	$scope.setAboutPageView = function(view){
+		$scope.highlights = view;
+	}
 });
 
 mySite.controller('projectController', function($scope, currentProjectService){

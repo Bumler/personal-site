@@ -29,8 +29,8 @@
 				<div class="project" ng-repeat="project in projects">
 					<div class="col-sm-2 col-xs-4 yy-margin ">
 						<img ng-src={{project.picture}} 
-							ng-click="goToProject(project)"
-							style="background: {{project.background}}" ng-class="{'img-padding': project.padding === true}">
+						ng-click="goToProject(project)"
+						style="background: {{project.background}}" ng-class="{'img-padding': project.padding === true}">
 						<h3 style="text-align: center;">{{project.title}}</h3>
 					</div>
 					<div class="col-sm-1"></div>
@@ -42,26 +42,33 @@
 	<div id="about" class="page about-bg about-font-color">
 		<div class="container-faux">
 			<h1 class="pixel-font">About Me</h1>
-			<div class="row text-bg" style="margin-top: 75px">
-				<div class="col-sm-4">
-					<h2>Professional Highlights</h2>
-					
-					<p>- I have held three different internships and one research fellowship.</p>
-					<p>- Professional experience in: Java, C#, VB.Net, SQL, HTML, CSS, SASS and Javascript within the Angularjs Framework.</p>
-					<p>- Experience working with both large pre existing code bases and spearheading my own.</p>
-					<p>- Familiar with multiple forms of version control including GitHub, GitLab and TFS.</p>
-					<p>- Strong understanding of object oriented programming.</p>
-					<p>- Well versed in agile methodology and meeting spring deadlines.</p>
-				</div>
+			<div class="row" style="margin-top: 75px">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 text-bg">
 
-				<div class="col-sm-4">
-					<h2>Personal Interests</h2>
-					<p>My biggest hobbies are video games (especially Rocket League), ping pong, tabletop games, listening to podcasts, lurking on reddit and working out. During my four years of university I was a member of, and eventually president, of the rugby team. I’ll go almost anywhere or do anything for a free t-shirt. I’m a huge fan of competition and creating games. And finally, I spend the rest of my time hanging out with friends and eating food.</p>
-				</div>
+				<div class="y-margin">
+					<div class="col-sm-6 card-no-mar" ng-class="{'card-fill': highlights}" ng-click="setAboutPageView(true)">
+						<h2>Highlights</h2>
+					</div>
+					<div class="col-sm-6 card-no-mar" ng-class="{'card-fill': !highlights}" ng-click="setAboutPageView(false)">
+						<h2>About</h2>
+					</div>
+					</div>
 
-				<div class="col-sm-4">
-					<h2>Why I'm Passionate</h2>
-					<p>The ability to create things and show them off is a huge draw to the fields of Front End Development and Software Engineering for me. Web development especially has been an incredible outlet for creativity. I can any of my ideas (including the really stupid ones) and, given enough time, turn them into a polished product accessible by the world. The more I learn about web development the more I want to do and I’m very excited to start my full time career in the field.</p>
+					<div class="col-sm-12 y-margin y-margin-bot">
+						<div ng-show="highlights">
+							<p>- I have held three different internships and one research fellowship.</p>
+							<p>- Professional experience in: Java, C#, VB.Net, SQL, HTML, CSS, SASS and Javascript within the Angularjs Framework.</p>
+							<p>- Experience working with both large pre existing code bases and spearheading my own.</p>
+							<p>- Familiar with multiple forms of version control including GitHub, GitLab and TFS.</p>
+							<p>- Strong understanding of object oriented programming.</p>
+							<p>- Well versed in agile methodology and meeting spring deadlines.</p>
+						</div>
+						<div ng-show="!highlights">
+							<p>My biggest hobbies are video games (especially Rocket League), ping pong, tabletop games, listening to podcasts, lurking on reddit and working out. During my four years of university I was a member of, and eventually president, of the rugby team. I’ll go almost anywhere or do anything for a free t-shirt. I’m a huge fan of competition and creating games. And finally, I spend the rest of my time hanging out with friends and eating food.</p>
+							<p>The ability to create things and show them off is a huge draw to the fields of Front End Development and Software Engineering for me. Web development especially has been an incredible outlet for creativity. I can any of my ideas (including the really stupid ones) and, given enough time, turn them into a polished product accessible by the world. The more I learn about web development the more I want to do and I’m very excited to start my full time career in the field.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
