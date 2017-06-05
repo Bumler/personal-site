@@ -46,17 +46,20 @@
 				<div class="col-md-3"></div>
 				<div class="col-md-6 text-bg">
 
-				<div class="y-margin">
-					<div class="col-sm-6 card-no-mar" ng-class="{'card-fill': highlights}" ng-click="setAboutPageView(true)">
-						<h2>Highlights</h2>
-					</div>
-					<div class="col-sm-6 card-no-mar" ng-class="{'card-fill': !highlights}" ng-click="setAboutPageView(false)">
-						<h2>About</h2>
-					</div>
+					<div class="y-margin">
+						<div class="col-sm-4 card-no-mar" ng-class="{'card-fill': views[0]}" ng-click="setAboutPageView(0)">
+							<h2>Highlights</h2>
+						</div>
+						<div class="col-sm-4 card-no-mar" ng-class="{'card-fill': views[1]}" ng-click="setAboutPageView(1)">
+							<h2>About</h2>
+						</div>
+						<div class="col-sm-4 card-no-mar" ng-class="{'card-fill': views[2]}" ng-click="setAboutPageView(2)">
+							<h2>Recognition</h2>
+						</div>
 					</div>
 
 					<div class="col-sm-12 y-margin y-margin-bot">
-						<div ng-show="highlights">
+						<div ng-show="views[0]">
 							<p>I have...</p>
 							<p>- held three different internships and one research fellowship.</p>
 							<p>- professional experience in: Java, C#, VB.Net, SQL, HTML, CSS, SASS and Javascript within the Angularjs Framework.</p>
@@ -65,9 +68,15 @@
 							<p>- strong understanding of object oriented programming.</p>
 							<p>- worked within an agile team and excelled in meeting sprint deadlines.</p>
 						</div>
-						<div ng-show="!highlights">
+						<div ng-show="views[1]">
 							<p>My biggest hobbies are video games (especially Rocket League), ping pong, tabletop games, listening to podcasts, lurking on reddit and working out. During my four years of university I was a member of, and eventually president, of the rugby team. I’ll go almost anywhere or do anything for a free t-shirt. I’m a huge fan of competition and creating games. And finally, I spend the rest of my time hanging out with friends and eating food.</p>
 							<p>The ability to create things and show them off is a huge draw to the fields of Front End Development and Software Engineering for me. Web development especially has been an incredible outlet for creativity. I can any of my ideas (including the really stupid ones) and, given enough time, turn them into a polished product accessible by the world. The more I learn about web development the more I want to do and I’m very excited to start my full time career in the field.</p>
+						</div>
+						<div ng-show="views[2]">
+							<p>Recieved the award 'Best Civic Hack' at LA Hacks 2017</p>
+							<p class="y-margin">Had my summer research featured in two articles</p> 
+							<p>http://kclu.org/post/south-coast-university-student-develops-app-help-police-solve-crimes#stream/0</p>
+							<p>http://www.callutheran.edu/news/story.html?id=12721#story</p>
 						</div>
 					</div>
 				</div>

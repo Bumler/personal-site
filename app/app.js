@@ -195,10 +195,13 @@ mySite.controller('mainController', function($scope, $anchorScroll, $location, c
 		$anchorScroll();
 	};
 
-	$scope.highlights = true;
+	$scope.views = [true, false, false];
 
 	$scope.setAboutPageView = function(view){
-		$scope.highlights = view;
+		for (i = 0; i < $scope.views.length; i++){
+			if (view === i) $scope.views[i] = true;
+			else $scope.views[i] = false;
+		}
 	}
 });
 
