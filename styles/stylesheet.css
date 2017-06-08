@@ -204,6 +204,9 @@
   color: rgba(54, 25, 25, 0.6);
   background-color: white; }
 
+.large-margin {
+  margin-top: 75px; }
+
 .contact-bg {
   background: url("/assets/bgs/darkPixel.png") no-repeat center center fixed;
   background-repeat: no-repeat;
