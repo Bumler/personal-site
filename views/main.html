@@ -1,110 +1,109 @@
-<div class="container-fluid">
-	<div id="splash" class="hero">
-		<div class="container-fluid absolute top-layer hero-text">
-			<div class="row">
-				<div class="col-lg-2 col-md-1"></div>
-				<div class="card col-lg-8 col-md-10">
-					<div class="col-md-4">
-						<img src="assets\pixelHenry.png" style="height: 290px">
-					</div>
-					<div class="col-md-8">
-						<h1 class="no-bot-margin">Henry</h1>
-						<h1 class="no-top-margin">Bulmer</h1>
-						<h2>Front End Developer</h2>
-						<h2>||</h2>
-						<h2>Software Engineer</h2>
-					</div>
+
+<div id="splash" class="hero">
+	<div class="container-fluid absolute top-layer hero-text">
+		<div class="row">
+			<div class="col-lg-2 col-md-1"></div>
+			<div class="card col-lg-8 col-md-10">
+				<div class="col-md-4">
+					<img src="assets\pixelHenry.png" style="height: 290px">
 				</div>
-			</div>
-		</div>
-		<img class="img" src="assets\bgs\pixelSky.png">
-	</div>
-
-	<div id="project" class="page project-bg project-font-color">
-		<div class="container-faux">
-			<h1 class="pixel-font">My Projects</h1>
-			<h3 class="pixel-font">Let's start with what's most important</h3>
-
-			<div class = "row">
-				<div class="project" ng-repeat="project in projects">
-					<div class="col-sm-2 col-xs-4 yy-margin ">
-						<img ng-src={{project.picture}} 
-						ng-click="goToProject(project)"
-						style="background: {{project.background}}" ng-class="{'img-padding': project.padding === true}">
-						<h3 style="text-align: center;">{{project.title}}</h3>
-					</div>
-					<div class="col-sm-1"></div>
+				<div class="col-md-8">
+					<h1 class="no-bot-margin">Henry</h1>
+					<h1 class="no-top-margin">Bulmer</h1>
+					<h2>Front End Developer</h2>
+					<h2>||</h2>
+					<h2>Software Engineer</h2>
 				</div>
 			</div>
 		</div>
 	</div>
+	<img class="img" src="assets\bgs\pixelSky.png">
+</div>
 
-	<div id="about" class="page about-bg about-font-color">
-		<div class="container-faux">
-			<h1 class="pixel-font">About Me</h1>
-			<div class="row" style="margin-top: 75px">
-				<div class="col-md-3"></div>
-				<div class="col-md-6 text-bg">
+<div id="project" class="page project-bg project-font-color">
+	<div class="container-fluid">
+		<h1 class="pixel-font">My Projects</h1>
+		<h3 class="pixel-font">Let's start with what's most important</h3>
 
-					<div class="y-margin">
-						<div class="col-sm-4 card-no-mar" ng-class="{'card-fill': views[0]}" ng-click="setAboutPageView(0)">
-							<h2>Highlights</h2>
-						</div>
-						<div class="col-sm-4 card-no-mar" ng-class="{'card-fill': views[1]}" ng-click="setAboutPageView(1)">
-							<h2>About</h2>
-						</div>
-						<div class="col-sm-4 card-no-mar" ng-class="{'card-fill': views[2]}" ng-click="setAboutPageView(2)">
-							<h2>Recognition</h2>
-						</div>
+		<div class = "row">
+			<div class="project" ng-repeat="project in projects">
+				<div class="col-md-2 col-xs-4 yy-margin ">
+					<img ng-src={{project.picture}} 
+					ng-click="goToProject(project)"
+					style="background: {{project.background}}" ng-class="{'img-padding': project.padding === true}">
+					<h3 style="text-align: center;">{{project.title}}</h3>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="about" class="page about-bg about-font-color">
+	<div class="container-fluid">
+		<h1 class="pixel-font">About Me</h1>
+		<div class="row" style="margin-top: 75px">
+			<div class="col-lg-2 col-md-2 col-sm-1"></div>
+			<div class="col-lg-8 col-md-8 col-sm-10 text-bg">
+
+				<div class="y-margin">
+					<div class="col-sm-4 card-no-mar" ng-class="{'card-fill': views[0]}" ng-click="setAboutPageView(0)">
+						<h2>Highlights</h2>
 					</div>
+					<div class="col-sm-4 card-no-mar" ng-class="{'card-fill': views[1]}" ng-click="setAboutPageView(1)">
+						<h2>About</h2>
+					</div>
+					<div class="col-sm-4 card-no-mar" ng-class="{'card-fill': views[2]}" ng-click="setAboutPageView(2)">
+						<h2>Recognition</h2>
+					</div>
+				</div>
 
-					<div class="col-sm-12 y-margin y-margin-bot">
-						<div ng-show="views[0]">
-							<p>I have...</p>
-							<p>- held three different internships and one research fellowship.</p>
-							<p>- professional experience in: Java, C#, VB.Net, SQL, HTML, CSS, SASS and Javascript within the Angularjs Framework.</p>
-							<p>- experience working with both large pre existing code bases and spearheading my own.</p>
-							<p>- familiarity with multiple forms of version control including GitHub, GitLab and TFS.</p>
-							<p>- strong understanding of object oriented programming.</p>
-							<p>- worked within an agile team and excelled in meeting sprint deadlines.</p>
-						</div>
-						<div ng-show="views[1]">
-							<p>My biggest hobbies are video games (especially Rocket League), ping pong, tabletop games, listening to podcasts, lurking on reddit and working out. During my four years of university I was a member of, and eventually president, of the rugby team. I’ll go almost anywhere or do anything for a free t-shirt. I’m a huge fan of competition and creating games. And finally, I spend the rest of my time hanging out with friends and eating food.</p>
-							<p>The ability to create things and show them off is a huge draw to the fields of Front End Development and Software Engineering for me. Web development especially has been an incredible outlet for creativity. I can any of my ideas (including the really stupid ones) and, given enough time, turn them into a polished product accessible by the world. The more I learn about web development the more I want to do and I’m very excited to start my full time career in the field.</p>
-						</div>
-						<div ng-show="views[2]">
-							<p>Recieved...</p>
-							<p>- the award 'Best Civic Hack' at LA Hacks 2017</p>
-							<p>- departmental distinctions, reserved for the top percentage of students within the major</p>
-							<p>- dean's list six times</p>
-							<p class="y-margin">Had my summer research featured in two articles</p> 
-							<a class="about-font-color" href="http://kclu.org/post/south-coast-university-student-develops-app-help-police-solve-crimes#stream/0"><p>http://kclu.org/post/south-coast-university-student-develops-app-help-police-solve-crimes#stream/0</p></a>
-							<a class="about-font-color" href="http://www.callutheran.edu/news/story.html?id=12721#story"><p>http://www.callutheran.edu/news/story.html?id=12721#story</p></a>
-						</div>
+				<div class="col-sm-12 y-margin y-margin-bot">
+					<div ng-show="views[0]">
+						<p>I have...</p>
+						<p>- held three different internships and one research fellowship.</p>
+						<p>- professional experience in: Java, C#, VB.Net, SQL, HTML, CSS, SASS and Javascript within the Angularjs Framework.</p>
+						<p>- experience working with both large pre existing code bases and spearheading my own.</p>
+						<p>- familiarity with multiple forms of version control including GitHub, GitLab and TFS.</p>
+						<p>- strong understanding of object oriented programming.</p>
+						<p>- worked within an agile team and excelled in meeting sprint deadlines.</p>
+					</div>
+					<div ng-show="views[1]">
+						<p>My biggest hobbies are video games (especially Rocket League), ping pong, tabletop games, listening to podcasts, lurking on reddit and working out. During my four years of university I was a member of, and eventually president, of the rugby team. I’ll go almost anywhere or do anything for a free t-shirt. I’m a huge fan of competition and creating games. And finally, I spend the rest of my time hanging out with friends and eating food.</p>
+						<p>The ability to create things and show them off is a huge draw to the fields of Front End Development and Software Engineering for me. Web development especially has been an incredible outlet for creativity. I can any of my ideas (including the really stupid ones) and, given enough time, turn them into a polished product accessible by the world. The more I learn about web development the more I want to do and I’m very excited to start my full time career in the field.</p>
+					</div>
+					<div ng-show="views[2]">
+						<p>Recieved...</p>
+						<p>- the award 'Best Civic Hack' at LA Hacks 2017</p>
+						<p>- departmental distinctions, reserved for the top percentage of students within the major</p>
+						<p>- dean's list six times</p>
+						<p class="y-margin">Had my summer research featured in two articles</p> 
+						<a class="about-font-color" href="http://kclu.org/post/south-coast-university-student-develops-app-help-police-solve-crimes#stream/0"><p>http://kclu.org/post/south-coast-university-student-develops-app-help-police-solve-crimes#stream/0</p></a>
+						<a class="about-font-color" href="http://www.callutheran.edu/news/story.html?id=12721#story"><p>http://www.callutheran.edu/news/story.html?id=12721#story</p></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
-	<div id="contact" class="page contact-bg contact-font-color">
-		<div class="container-faux">
-			<div class="contact-card">
-				<h1 class="pixel-font">Contact Me</h1>
-				<img src="/assets/social/gmail.png">
-				<span class="pixel-font left-mar">hbulmer@callutheran.edu</span>
+<div id="contact" class="page contact-bg contact-font-color">
+	<div class="container-faux">
+		<div class="contact-card">
+			<h1 class="pixel-font">Contact Me</h1>
+			<img src="/assets/social/gmail.png">
+			<span class="pixel-font left-mar">hbulmer@callutheran.edu</span>
 
-				<h1 class="pixel-font yy-margin">Or Learn More</h1>
-				<a href="Resume.pdf">
-					<img class="right-mar" src="/assets/social/paper.png">
-				</a>
-				<a href="https://www.linkedin.com/in/henrybulmer/">
-					<img src="/assets/social/linked.png">
-				</a>
-				<a href="https://github.com/Bumler">
-					<img class="left-mar" src="/assets/social/git.png">
-				</a>
-			</div>
+			<h1 class="pixel-font yy-margin">Or Learn More</h1>
+			<a href="Resume.pdf">
+				<img class="right-mar" src="/assets/social/paper.png">
+			</a>
+			<a href="https://www.linkedin.com/in/henrybulmer/">
+				<img src="/assets/social/linked.png">
+			</a>
+			<a href="https://github.com/Bumler">
+				<img class="left-mar" src="/assets/social/git.png">
+			</a>
 		</div>
 	</div>
 </div>

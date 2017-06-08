@@ -67,8 +67,6 @@
 .hero {
   font-family: 'Press Start 2P', cursive;
   height: 100vh;
-  margin-left: -15px;
-  margin-right: -15px;
   position: relative;
   overflow: hidden; }
   .hero .container-fluid {
@@ -152,9 +150,7 @@
   background: url("/assets/bgs/night-sky.png") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  margin-left: -15px;
-  margin-right: -15px; }
+  height: 100vh; }
 
 .project-font-color {
   color: white; }
@@ -171,9 +167,7 @@
   background: url("/assets/bgs/pixelCity.jpg") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  margin-left: -15px;
-  margin-right: -15px; }
+  height: 100vh; }
 
 .web-img {
   width: 100%;
@@ -190,9 +184,7 @@
   background: url("/assets/bgs/pixelWarm.png") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  margin-left: -15px;
-  margin-right: -15px; }
+  height: 100vh; }
   .about-bg p {
     font-size: 24px;
     margin-bottom: 5px; }
@@ -216,9 +208,7 @@
   background: url("/assets/bgs/darkPixel.png") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  margin-left: -15px;
-  margin-right: -15px; }
+  height: 100vh; }
   .contact-bg span {
     font-size: 20px; }
 
