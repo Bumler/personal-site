@@ -1,5 +1,4 @@
-
-<div id="splash" class="hero">
+ <div id="splash" class="hero">
 	<div class="container-fluid absolute top-layer hero-text">
 		<div class="row">
 			<div class="col-lg-2 col-md-1"></div>
@@ -27,13 +26,17 @@
 
 		<div class = "row">
 			<div class="project" ng-repeat="project in projects">
-				<div class="col-md-2 col-xs-4 yy-margin ">
-					<img ng-src={{project.picture}} 
-					ng-click="goToProject(project)"
-					style="background: {{project.background}}" ng-class="{'img-padding': project.padding === true}">
-					<h3 style="text-align: center;">{{project.title}}</h3>
+				<div class="col-lg-2 col-md-3 col-xs-4 yy-margin ">
+						<img 
+						ng-src={{project.picture}} 
+						ng-click="goToProject(project)"
+						style="background: {{project.background}}" 
+						ng-class="{'img-padding': project.padding === true}">
+
+						<h3 style="text-align: center;"><nobr>{{project.title}}</nobr></h3>
 				</div>
-				<div class="col-md-1"></div>
+
+				<div class="col-lg-1 col-md-1"></div>
 			</div>
 		</div>
 	</div>
